@@ -20,7 +20,9 @@ Step 11: Perform speech recognition with exceptional handling:<Br>
 •	If successful, print the recognized text.<Br>
 •	Handle specific exceptions: If the recognition result is unknown or if there is an issue with the request to the Google Speech Recognition service, print corresponding error messages.<Br>
 •	A generic exception block captures any other unexpected errors.<Br>
+ 
 <H3>Program:</H3>
+
 ```
 import pyaudio 
 import speech_recognition as sr
@@ -47,7 +49,9 @@ except sr.RequestError as e:
     print(f'Error with the request to Google Speech Recognition Service: {e}')
 except Exception as e:
     print(f'Error: {e}')
+
 ```
+
 <H3> Output:</H3>
 
 ![image](https://github.com/Sharmilasha/Ex-8--AAI/assets/94506182/bb379c3f-519a-4b6c-b012-53e87ba27bbc)
